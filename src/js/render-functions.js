@@ -27,27 +27,29 @@ export function createGallery(images) {
         comments,
         downloads,
       }) => `
-      <a class="photo-card" href="${largeImageURL}">
-        <img class="photo-card__image" src="${webformatURL}" alt="${tags}" loading="lazy" />
-        <div class="photo-card__info">
-          <p>
-            <b>Likes</b>
-            <span>${likes}</span>
-          </p>
-          <p>
-            <b>Views</b>
-            <span>${views}</span>
-          </p>
-          <p>
-            <b>Comments</b>
-            <span>${comments}</span>
-          </p>
-          <p>
-            <b>Downloads</b>
-            <span>${downloads}</span>
-          </p>
-        </div>
-      </a>`,
+      <li class="photo-card">
+        <a class="photo-card__link" href="${largeImageURL}">
+          <img class="photo-card__image" src="${webformatURL}" alt="${tags}" loading="lazy" />
+          <div class="photo-card__info">
+            <p>
+              <b>Likes</b>
+              <span>${likes}</span>
+            </p>
+            <p>
+              <b>Views</b>
+              <span>${views}</span>
+            </p>
+            <p>
+              <b>Comments</b>
+              <span>${comments}</span>
+            </p>
+            <p>
+              <b>Downloads</b>
+              <span>${downloads}</span>
+            </p>
+          </div>
+        </a>
+      </li>`,
     )
     .join('');
 
