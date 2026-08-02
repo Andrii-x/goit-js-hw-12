@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const PIXABAY_API_KEY = import.meta.env.VITE_PIXABAY_API_KEY || '';
+const PIXABAY_API_KEY = import.meta.env.VITE_PIXABAY_API_KEY || '35813641-9d0fb5d78f0d31eff08f52d7';
 const PER_PAGE = 15;
 
 const api = axios.create({

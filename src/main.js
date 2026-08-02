@@ -55,6 +55,7 @@ async function onLoadMore() {
 }
 
 async function loadImages() {
+  hideLoadMoreButton();
   showLoader();
 
   try {
